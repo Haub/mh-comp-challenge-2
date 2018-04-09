@@ -60,7 +60,7 @@ menu {
 a {
 	text-decoration: none;
 	color: #ffffff;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	opacity: 0.5;
 }
 
@@ -342,7 +342,7 @@ h6 {
 	}
 
 	.header {
-		height: 17vh;
+		height: 20vh;
 	}
 
 	.header-icons {
@@ -366,13 +366,8 @@ h6 {
 		width: 100vw;
 	}
 
-	.header {
-		height: 15vh;
-	}
-
 	li {
 		display: block;
-		text-decoration: none;
 	}
 
 	.header-icons {
@@ -396,7 +391,8 @@ h6 {
 				"user1 user2" 
 				"user3 user4" 
 				"user5 user6" 
-				"user7 user8";	
+				"user7 user8";
+		grid-template-rows: 4(1fr);	
 		}
 
 	.shares,
@@ -416,20 +412,23 @@ h6 {
 	}
 }
 
-
-
 @media only screen and (max-width: 480px) {
+
+	menu {
+		margin-right: 2rem;
+	}
 
 	.playlist-icon {
 		background-image: url("images/playlist-logo.png");
-		background-size: 2rem;
-		background-position: right top;
+		background-size: 1.5rem;
+		background-position: center top;
 		background-repeat: no-repeat;
 	}
 
 	.grid {
 		display: grid;
-		grid-template-columns: 98%; 
+		grid-template-columns: 98%;
+		grid-template-rows: 8(1fr); 
 		grid-template-areas: 
 				"user1" 
 				"user2" 
@@ -450,12 +449,9 @@ h6 {
 	}	
 
 	a, p {
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 
-	p {
-		padding: 0;
-	}
 
 	h1 {
 		padding: 1rem 0 0 1rem;
